@@ -3,6 +3,7 @@
     min-height: 100vh; /* Altura mínima igual a la altura de la ventana de visualización */
     display: flex;
     flex-direction: column; /* Permite que los elementos se coloquen verticalmente */
+    background-color: black;
 }
 
 /* Contenedor de la lista de proyectos, ocupando el espacio restante */
@@ -13,7 +14,6 @@
     gap: 20px; /* Espacio entre los proyectos */
     justify-content: center; /* Centra los proyectos horizontalmente */
     padding: 80px; /* Espacio interno alrededor de los proyectos */
-    background-color:blueviolet; /* Color de fondo de la página */
 }
 
 /* Ajusta el contenido adicional si es necesario */

@@ -1,24 +1,16 @@
 /* Estilos para la barra de navegación */
-/* .Navbar {
-  background-color: #000000;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  justify-content: space-between;
-  font-family: sans-serif;
-} */
+
 .Navbar {
   background-color: #000000;
   padding: 10px 20px;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   justify-content: space-between;
   font-family: sans-serif;
   position: fixed;
-  width: 100%; 
-  z-index: 1000; 
+  width: 100%;
+  z-index: 1000;
 }
 .Navbar ul {
   margin: 0;
@@ -44,7 +36,6 @@
   width: 14vw; /* Ancho de la imagen */
   /* margin-right: 1200px; Margen derecho para separar el logo de los enlaces */
 }
-
 
 @media screen and (max-width: 768px) {
   .Navbar {
@@ -74,90 +65,24 @@
   .burguer {
     /* order: 1; Cambia el orden del icono del burger */
     align-self: flex-start; /* Alinea el icono del burger hacia la izquierda */
-    
   }
 }
-
-
-/* .items {
-  position: absolute;
-  top: -700px;
-  left: -2000px;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  transition: all .5s ease ;
-  a {
-    color: white;
-    font-size: 2rem;
-    display: block;
-  }
-
-  @media (min-width: 768px) {
-    position: initial;
-    margin: 0;
-    a {
-      font-size: 1rem;
-      color: white;
-      display: inline;
-    }
-  }
-} */
-
-/* .items.active {
-  width: 100%;
-  display: block;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  top: 30%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 9999;
-  a {
-    color: #ffffff;
-  }
-} */
 
 .burguer {
   @media (min-width: 768px) {
     display: none;
-    
   }
 }
 
-
-
-/* .BgDiv{
-  background-color: #000000; 
-  position: absolute;
-  top: -2000px;
-  left: -2000px;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  z-index: 999;
-  transition: all .6s ease;
-  &.active{
-    border-radius: 0 0 80% 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-} */
-
 .BgDiv {
-  background-color: #000000; 
+  background-color: #000000;
   position: fixed; /* Cambiado de absolute a fixed */
   top: -2000px;
   left: -2000px;
   width: 100%;
   height: 100%;
   z-index: 9998; /* Un valor alto pero menor que .items */
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 
 .BgDiv.active {
@@ -176,7 +101,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .items a {
@@ -213,10 +138,6 @@
   color: #ffffff;
 }
 
-
 .no-scroll {
   overflow: hidden;
 }
-
-
-

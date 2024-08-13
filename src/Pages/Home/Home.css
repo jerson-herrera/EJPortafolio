@@ -1,65 +1,100 @@
 /* Home.css */
 
+/* Asegura que el contenedor ocupe el tamaño completo de la pantalla */
 .home-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Ocupa el tamaño completo de la pantalla */
-    background-color: greenyellow; /* Cambia este color según tu preferencia */
-    margin: 0; /* Asegura que no haya márgenes adicionales */
-    padding: 0; /* Asegura que no haya padding adicional */
-  }
-  
-  .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%; /* Ocupa el ancho completo del contenedor */
-    padding: 20px;
-  }
-  
-  .foto-perfil {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
-  
-  .text {
-    max-width: 800px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupa al menos el tamaño completo de la ventana */
+  padding: 20px; /* Espaciado alrededor del contenido */
+  box-sizing: border-box;
+}
+
+/* Estilo del contenedor de la sección de inicio */
+.home-container {
+  text-align: center; /* Centra el texto dentro del contenedor */
+  max-width: 1200px; /* Limita el ancho máximo del contenedor */
+  width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho */
+}
+
+/* Estilo para la imagen de perfil */
+.foto-perfil {
+  max-width: 150px; /* Limita el ancho máximo de la imagen */
+  border-radius: 50%; /* Hace la imagen circular */
+  margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+/* Estilo para el título */
+.nombre {
+  font-size: 2rem; /* Tamaño del texto para pantallas grandes */
+  margin: 0; /* Elimina el margen por defecto */
+}
+
+/* Estilo para el párrafo */
+.parrafo {
+  font-size: 1rem; /* Tamaño del texto para pantallas grandes */
+  margin: 10px 0; /* Espacio arriba y abajo del párrafo */
+}
+
+/* Estilo para el botón de descarga */
+button {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none; /* Elimina el borde por defecto */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-size: 1rem; /* Tamaño del texto del botón */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+button:hover {
+  background-color: #0056b3; /* Color de fondo cuando se pasa el cursor sobre el botón */
+}
+
+/* Estilo para la lista de iconos tecnológicos */
+.home-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los iconos */
+  margin-top: 20px; /* Espacio arriba de la lista */
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 768px) {
   .nombre {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem; /* Tamaño del texto para pantallas pequeñas */
   }
   
   .parrafo {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 0.875rem; /* Tamaño del texto para pantallas pequeñas */
   }
-  
-  .home-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+
+  .foto-perfil {
+    max-width: 100px; /* Tamaño de la imagen para pantallas pequeñas */
   }
   
   button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
+    padding: 8px 16px; /* Espaciado interno del botón para pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .nombre {
+    font-size: 1.25rem; /* Tamaño del texto para pantallas muy pequeñas */
   }
   
-  button:hover {
-    background-color: #0056b3;
+  .parrafo {
+    font-size: 0.75rem; /* Tamaño del texto para pantallas muy pequeñas */
   }
-  
+
+  .foto-perfil {
+    max-width: 80px; /* Tamaño de la imagen para pantallas muy pequeñas */
+  }
+
+  button {
+    padding: 6px 12px; /* Espaciado interno del botón para pantallas muy pequeñas */
+  }
+}

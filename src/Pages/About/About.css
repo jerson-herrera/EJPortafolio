@@ -1,107 +1,112 @@
-/* About.css */
-
-/* Contenedor principal de la sección 'About' */
+/* General styles */
 .about-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    padding-top: 60px; /* Ajusta este valor según la altura de la barra de navegación */
-    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana de visualización */
-    background-color: #900000;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupa al menos el tamaño completo de la ventana */
+  padding: 20px; /* Espaciado alrededor del contenido */
+  padding-top: 80px; /* Espacio superior para evitar superposición con la navbar */
+  box-sizing: border-box;
+  background-color: brown;
 }
 
-/* Contenedor de las tarjetas */
+/* Estilo del contenedor de la sección About */
 .about-container {
-    display: flex;
-    gap: 20px;
-    max-width: 1200px;
-    width: 100%;
-    height: calc(100% - 60px); /* Ajusta la altura para el contenido restante */
-    margin: 0 auto;
-    box-sizing: border-box;
-    flex-direction: row; /* Por defecto, en pantallas grandes */
+  display: flex; /* Usa flexbox para alinear los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  max-width: 1200px; /* Limita el ancho máximo del contenedor */
+  width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho */
 }
 
-/* Estilo para cada tarjeta */
-.card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    flex: 1;
-    max-width: 500px;
-    box-sizing: border-box;
-}
-
-/* Estilo para el texto de la primera tarjeta */
+/* Estilo para el texto dentro de la sección About */
 .about-text {
-    margin-bottom: 20px;
+  flex: 1; /* Ocupa el espacio disponible */
+  max-width: 50%; /* Limita el ancho máximo a la mitad del contenedor */
+  margin-right: 20px; /* Espacio a la derecha de la sección de texto */
+  box-sizing: border-box;
 }
 
-/* Estilo para el título de la sección */
+/* Estilo para las listas de iconos */
+.about-languages,
+.about-frameworksLibrerias {
+  flex: 1; /* Ocupa el espacio disponible */
+  max-width: 50%; /* Limita el ancho máximo a la mitad del contenedor */
+  box-sizing: border-box;
+}
+
+/* Estilo para la lista de iconos de lenguajes */
+.about-languages {
+  display: flex;
+  flex-direction: column; /* Apila los iconos verticalmente */
+  align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+  margin-bottom: 20px; /* Espacio abajo de la sección de lenguajes */
+}
+
+/* Estilo para la lista de iconos de frameworks y librerías */
+.about-frameworksLibrerias {
+  display: flex;
+  flex-direction: column; /* Apila los iconos verticalmente */
+  align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+}
+
+/* Estilo para el título */
 .about-text h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+  font-size: 2rem; /* Tamaño del texto para pantallas grandes */
+  margin: 0 0 20px 0; /* Espacio abajo del título */
 }
 
-/* Estilo para el párrafo de la sección */
+/* Estilo para el párrafo */
 .about-text p {
-    font-size: 1em;
-    line-height: 1.6;
-    margin-bottom: 20px;
+  font-size: 1rem; /* Tamaño del texto para pantallas grandes */
+  line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+  margin: 0 0 20px 0; /* Espacio abajo del párrafo */
 }
 
-/* Estilo para el subtítulo de la sección */
+/* Estilo para el subtítulo */
 .about-text h3 {
-    font-size: 1.2em;
-    color: #333;
+  font-size: 1.25rem; /* Tamaño del texto para pantallas grandes */
+  margin: 20px 0; /* Espacio arriba y abajo del subtítulo */
 }
 
-/* Estilo para la segunda tarjeta */
-.home-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* Media query para pantallas medianas y pequeñas */
+/* Estilos específicos para pantallas pequeñas */
 @media (max-width: 768px) {
-    .about-container {
-        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
-        align-items: center;
-    }
+  .about-page {
+    padding-top: 100px; /* Ajusta el espacio superior para pantallas pequeñas */
+  }
 
-    .card {
-        max-width: 100%;
-    }
+  .about-container {
+    flex-direction: column; /* Apila las secciones verticalmente en pantallas pequeñas */
+    align-items: center; /* Centra las secciones horizontalmente */
+  }
 
-    .about-text h1 {
-        font-size: 1.5em; /* Ajusta el tamaño del título */
-    }
+  .about-text {
+    max-width: 100%; /* Ocupa todo el ancho del contenedor en pantallas pequeñas */
+    margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+    margin-bottom: 20px; /* Agrega espacio debajo en pantallas pequeñas */
+  }
 
-    .about-text p {
-        font-size: 0.9em; /* Ajusta el tamaño del párrafo */
-    }
-
-    .about-text h3 {
-        font-size: 1em; /* Ajusta el tamaño del subtítulo */
-    }
+  .about-languages,
+  .about-frameworksLibrerias {
+    max-width: 100%; /* Ocupa todo el ancho del contenedor en pantallas pequeñas */
+  }
 }
 
-/* Media query para pantallas muy pequeñas */
 @media (max-width: 480px) {
-    .about-text h1 {
-        font-size: 1.2em; /* Ajusta el tamaño del título */
-    }
+  .about-page {
+    padding-top: 120px; /* Ajusta el espacio superior para pantallas muy pequeñas */
+  }
 
-    .about-text p {
-        font-size: 0.8em; /* Ajusta el tamaño del párrafo */
-    }
+  .about-text h1 {
+    font-size: 1.25rem; /* Tamaño del texto para pantallas muy pequeñas */
+  }
 
-    .about-text h3 {
-        font-size: 0.9em; /* Ajusta el tamaño del subtítulo */
-    }
+  .about-text p {
+    font-size: 0.75rem; /* Tamaño del texto para pantallas muy pequeñas */
+  }
+
+  .about-text h3 {
+    font-size: 0.875rem; /* Tamaño del texto para pantallas muy pequeñas */
+  }
 }

@@ -1,18 +1,58 @@
+/* Contact.css */
+
+/* Asegura que el contenedor ocupe el tamaño completo de la pantalla */
 .contact-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Ocupa el tamaño completo de la pantalla */
-    background-color: blue; /* Cambia este color según tu preferencia */
-    margin: 0; /* Asegura que no haya márgenes adicionales */
-    padding: 0; /* Asegura que no haya padding adicional */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ocupa al menos el tamaño completo de la ventana */
+  padding: 20px; /* Espaciado alrededor del contenido */
+  box-sizing: border-box;
+  background-color: aquamarine;
+}
+
+/* Estilo del contenedor de la sección de contacto */
+.contact-container {
+  text-align: center; /* Centra el texto dentro del contenedor */
+  max-width: 1200px; /* Limita el ancho máximo del contenedor */
+  width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho */
+}
+
+/* Estilo para el título */
+.contact-container h1 {
+  font-size: 2rem; /* Tamaño del texto para pantallas grandes */
+  margin: 0 0 20px 0; /* Espacio abajo del título */
+}
+
+/* Estilo para la lista de iconos tecnológicos */
+.home-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los iconos */
+  margin-top: 20px; /* Espacio arriba de la lista */
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contact-container h1 {
+    font-size: 1.5rem; /* Tamaño del texto para pantallas pequeñas */
   }
-  
-  .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%; /* Ocupa el ancho completo del contenedor */
-    padding: 20px;
+
+  .home-list {
+    gap: 15px; /* Espacio entre los iconos para pantallas pequeñas */
+    margin-top: 15px; /* Espacio arriba de la lista para pantallas pequeñas */
   }
+}
+
+@media (max-width: 480px) {
+  .contact-container h1 {
+    font-size: 1.25rem; /* Tamaño del texto para pantallas muy pequeñas */
+  }
+
+  .home-list {
+    gap: 10px; /* Espacio entre los iconos para pantallas muy pequeñas */
+    margin-top: 10px; /* Espacio arriba de la lista para pantallas muy pequeñas */
+  }
+}
