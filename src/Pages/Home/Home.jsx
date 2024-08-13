@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <div id="home" className="home-page">
       <div className="home-container">
-        <img src="./opticDashy.png" alt="foto-perfil" className="foto-perfil" />
+        <img src="./perfil.svg" alt="foto-perfil" className="foto-perfil" />
         <div className="text">
           <h1 className="nombre">Jerson Herrera</h1>
           <p className="parrafo">
