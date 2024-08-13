@@ -1,0 +1,15 @@
+//Este soluciono el conflicto que tenia con el css de los iconos 
+2. Utilizar Selectores Más Específicos
+Si prefieres no modificar los archivos CSS, puedes hacer que los estilos sean más específicos para las imágenes dentro de ProjectsComponent para que no interfieran con TechIconsComponent:
+
+Projects.css:
+
+css
+Copy code
+.projects-component > img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+    margin-bottom: 10px; /* Espacio debajo de la imagen reducido */
+}
+Al usar el selector >, solo se aplicarán los estilos a las imágenes que sean elementos hijos directos del contenedor .projects-component, lo que evita afectar a los íconos en TechIconsComponent.

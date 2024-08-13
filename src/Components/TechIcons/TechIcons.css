@@ -1,0 +1,35 @@
+.techicons-container {
+    margin: 20px auto;
+    text-align: center; /* Centra el título y los logotipos */
+}
+
+.techicons-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Ajusta el color del texto del título según tus necesidades */
+}
+
+.techicons-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los logotipos horizontalmente */
+    gap: 20px; /* Espacio entre los logotipos */
+}
+
+.tech-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el logotipo y la versión verticalmente */
+}
+
+.tech-icon {
+    width: 50px; /* Ajusta el tamaño según tus necesidades */
+    height: 50px;
+    margin-bottom: 10px; /* Espacio entre el logotipo y la versión */
+}
+
+.tech-icon-version {
+    font-size: 14px; /* Tamaño de fuente para la versión */
+    color: #555; /* Color del texto de la versión */
+    margin: 0; /* Elimina márgenes predeterminados */
+}

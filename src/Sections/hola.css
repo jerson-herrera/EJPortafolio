@@ -1,0 +1,28 @@
+/* Estilos para la sección de contacto */
+.home-section {
+  height: 100vh; /* Ocupa todo el alto de la pantalla */
+  /* width: 100vw;  Ocupa todo el ancho de la pantalla */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  padding: 0 20px; /* Añade relleno lateral para evitar que el contenido toque los bordes */
+  box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total del elemento */
+  overflow-x: hidden; /* Evita el scroll horizontal */
+  background-color: rgb(45, 96, 0);
+}
+
+.home-container {
+  text-align: center; /* Centra el texto en el contenedor */
+  margin-top: 60px; /* Ajusta el margen superior para que el contenido no esté pegado a la parte superior */
+}
+
+.home-section h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #fff; /* Color del texto */
+}
+
+.home-section p {
+  font-size: 1.2rem;
+  color: #fff; /* Color del texto */
+}

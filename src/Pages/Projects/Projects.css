@@ -1,0 +1,22 @@
+/* Asegúrate de que el contenedor principal ocupe toda la altura de la pantalla */
+.projects-page {
+    min-height: 100vh; /* Altura mínima igual a la altura de la ventana de visualización */
+    display: flex;
+    flex-direction: column; /* Permite que los elementos se coloquen verticalmente */
+}
+
+/* Contenedor de la lista de proyectos, ocupando el espacio restante */
+.projects-list {
+    flex: 1; /* Permite que el contenedor de la lista de proyectos crezca y llene el espacio restante */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los proyectos se envuelvan en varias filas si no caben en una sola fila */
+    gap: 20px; /* Espacio entre los proyectos */
+    justify-content: center; /* Centra los proyectos horizontalmente */
+    padding: 20px; /* Espacio interno alrededor de los proyectos */
+    background-color: #f4f4f4; /* Color de fondo de la página */
+}
+
+/* Ajusta el contenido adicional si es necesario */
+.projects-page > * {
+    margin: 0; /* Elimina márgenes predeterminados */
+}

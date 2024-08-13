@@ -1,0 +1,222 @@
+/* Estilos para la barra de navegación */
+/* .Navbar {
+  background-color: #000000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  justify-content: space-between;
+  font-family: sans-serif;
+} */
+.Navbar {
+  background-color: #000000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  justify-content: space-between;
+  font-family: sans-serif;
+  position: fixed;
+  width: 100%; 
+  z-index: 1000; 
+}
+.Navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex; /* Hace que los elementos de la lista se distribuyan en una línea */
+}
+
+.Navbar li {
+  margin-left: 24px; /* Agrega margen izquierdo al primer elemento */
+}
+
+.Navbar ul li a {
+  text-decoration: none; /* Eliminar el subrayado de los enlaces */
+  color: #fff; /* Color del texto de los enlaces */
+  font-size: 27px; /* Tamaño de fuente de los enlaces */
+}
+
+.Navbar ul li a:hover {
+  color: rgb(229, 83, 54); /* Cambiar color del texto al pasar el mouse */
+}
+
+.logoCdl {
+  width: 14vw; /* Ancho de la imagen */
+  /* margin-right: 1200px; Margen derecho para separar el logo de los enlaces */
+}
+
+
+@media screen and (max-width: 768px) {
+  .Navbar {
+    /* flex-direction: column; Cambia la dirección de los elementos a una columna */
+    /* align-items: center; Centra los elementos horizontalmente */
+    /* justify-content: center; Centra verticalmente los elementos */
+    padding: 10px; /* Ajusta el relleno para dispositivos móviles */
+    display: flex; /* Añade display: flex; para utilizar justify-content */
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Navbar ul {
+    margin-top: 10px; /* Añade un margen superior para separar los enlaces del logo */
+  }
+
+  .Navbar li {
+    margin-left: 0; /* Elimina el margen izquierdo entre los elementos de la lista */
+  }
+
+  .logoCdl {
+    /* order: 2; Cambia el orden del logo */
+    align-self: center;
+    width: 25vw;
+  }
+
+  .burguer {
+    /* order: 1; Cambia el orden del icono del burger */
+    align-self: flex-start; /* Alinea el icono del burger hacia la izquierda */
+    
+  }
+}
+
+
+/* .items {
+  position: absolute;
+  top: -700px;
+  left: -2000px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  transition: all .5s ease ;
+  a {
+    color: white;
+    font-size: 2rem;
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    position: initial;
+    margin: 0;
+    a {
+      font-size: 1rem;
+      color: white;
+      display: inline;
+    }
+  }
+} */
+
+/* .items.active {
+  width: 100%;
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 30%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 9999;
+  a {
+    color: #ffffff;
+  }
+} */
+
+.burguer {
+  @media (min-width: 768px) {
+    display: none;
+    
+  }
+}
+
+
+
+/* .BgDiv{
+  background-color: #000000; 
+  position: absolute;
+  top: -2000px;
+  left: -2000px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  z-index: 999;
+  transition: all .6s ease;
+  &.active{
+    border-radius: 0 0 80% 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+} */
+
+.BgDiv {
+  background-color: #000000; 
+  position: fixed; /* Cambiado de absolute a fixed */
+  top: -2000px;
+  left: -2000px;
+  width: 100%;
+  height: 100%;
+  z-index: 9998; /* Un valor alto pero menor que .items */
+  transition: all .6s ease;
+}
+
+.BgDiv.active {
+  border-radius: 0 0 80% 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.items {
+  position: absolute;
+  top: -700px;
+  left: -2000px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  transition: all .5s ease;
+}
+
+.items a {
+  color: white;
+  font-size: 2rem;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .items {
+    position: initial;
+    margin: 0;
+  }
+
+  .items a {
+    font-size: 1rem;
+    color: white;
+    display: inline;
+  }
+}
+
+.items.active {
+  width: 100%;
+  display: block;
+  position: fixed; /* Cambiado de absolute a fixed */
+  top: 30%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 9999; /* Asegúrate de que este valor sea mayor que el de .BgDiv */
+}
+
+.items.active a {
+  color: #ffffff;
+}
+
+
+.no-scroll {
+  overflow: hidden;
+}
+
+
+
