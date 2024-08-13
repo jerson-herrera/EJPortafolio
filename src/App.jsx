@@ -1,22 +1,18 @@
 import { useState } from "react";
 import Header from "./Layouts/Header";
-// import Home from "./Sections/Home"
-import { Contact } from "./Sections/Contact";
-import { Service } from "./Sections/Service";
-import { Standings } from "./Sections/Standings";
-import { Hola } from "./Sections/Hola";
+import { Contact } from "./Pages/Contact/Contact";
+import { About } from "./Pages/About/About";
 import { Projects } from "./Pages/Projects/Projects";
+import { Home } from "./Pages/Home/Home";
 
 function App() {
   return (
     <>
       <Header />
-      {/* <Home/> */}
-      <Contact />
-      <Service />
-      <Standings />
-      <Hola />
+      <Home/>
+      <About />
       <Projects />
+      <Contact />
     </>
   );
 }

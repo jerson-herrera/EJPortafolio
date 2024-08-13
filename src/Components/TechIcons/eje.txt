@@ -1,0 +1,3 @@
+Se verifica si el objeto logo tiene una propiedad link.
+Si link está presente, se envuelve la imagen en una etiqueta <a> que apunta al enlace.
+Si no hay un link, se muestra la imagen sin el enlace.

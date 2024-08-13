@@ -1,0 +1,65 @@
+/* Home.css */
+
+.home-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa el tamaño completo de la pantalla */
+    background-color: greenyellow; /* Cambia este color según tu preferencia */
+    margin: 0; /* Asegura que no haya márgenes adicionales */
+    padding: 0; /* Asegura que no haya padding adicional */
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    padding: 20px;
+  }
+  
+  .foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .text {
+    max-width: 800px;
+  }
+  
+  .nombre {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .parrafo {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .home-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

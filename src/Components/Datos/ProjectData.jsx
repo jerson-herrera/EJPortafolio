@@ -1,27 +1,3 @@
-// export const projects = [
-//     {
-//         title: "Optic Roster",
-//         imageUrl: "/opticTeam.jpg",
-//         alt: "Optic Roster",
-//         redirectUrl: "https://opticgaming.com/",
-//         className: "project-image",
-//         descripcion: "Este es optic Gaming el actual equipo campeon de la call of duty league con premios valuados en 900 mil dolares"
-//     },
-//     {
-//         title: "Faze Roster",
-//         imageUrl: "/fazeTeam.jpg",
-//         alt: "Faze Roster",
-//         redirectUrl: "https://example.com/project2",
-//         className: "project-image"
-//     },
-//     {
-//         title: "Cdl Logo",
-//         imageUrl: "/LogoCDL.jpg",
-//         alt: "Cdl Logo",
-//         redirectUrl: "https://example.com/project3",
-//         className: "project-image"
-//     }
-// ];
 export const projects = [
     {
         title: "Optic Roster",
@@ -60,3 +36,5 @@ export const projects = [
         ]
     }
 ];
+
+

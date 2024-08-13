@@ -1,0 +1,107 @@
+/* About.css */
+
+/* Contenedor principal de la sección 'About' */
+.about-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    padding-top: 60px; /* Ajusta este valor según la altura de la barra de navegación */
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana de visualización */
+    background-color: #900000;
+    box-sizing: border-box;
+}
+
+/* Contenedor de las tarjetas */
+.about-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    height: calc(100% - 60px); /* Ajusta la altura para el contenido restante */
+    margin: 0 auto;
+    box-sizing: border-box;
+    flex-direction: row; /* Por defecto, en pantallas grandes */
+}
+
+/* Estilo para cada tarjeta */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+/* Estilo para el texto de la primera tarjeta */
+.about-text {
+    margin-bottom: 20px;
+}
+
+/* Estilo para el título de la sección */
+.about-text h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el párrafo de la sección */
+.about-text p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el subtítulo de la sección */
+.about-text h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Estilo para la segunda tarjeta */
+.home-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Media query para pantallas medianas y pequeñas */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .about-text h1 {
+        font-size: 1.5em; /* Ajusta el tamaño del título */
+    }
+
+    .about-text p {
+        font-size: 0.9em; /* Ajusta el tamaño del párrafo */
+    }
+
+    .about-text h3 {
+        font-size: 1em; /* Ajusta el tamaño del subtítulo */
+    }
+}
+
+/* Media query para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .about-text h1 {
+        font-size: 1.2em; /* Ajusta el tamaño del título */
+    }
+
+    .about-text p {
+        font-size: 0.8em; /* Ajusta el tamaño del párrafo */
+    }
+
+    .about-text h3 {
+        font-size: 0.9em; /* Ajusta el tamaño del subtítulo */
+    }
+}

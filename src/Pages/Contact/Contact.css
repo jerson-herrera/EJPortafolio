@@ -1,0 +1,18 @@
+.contact-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa el tamaño completo de la pantalla */
+    background-color: blue; /* Cambia este color según tu preferencia */
+    margin: 0; /* Asegura que no haya márgenes adicionales */
+    padding: 0; /* Asegura que no haya padding adicional */
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    padding: 20px;
+  }

@@ -44,16 +44,13 @@ const Navbar = () => {
           <a href="#home" onClick={handleClick}>Home</a>
         </li>
         <li>
-          <a href="#service" onClick={handleClick}>Service</a>
+          <a href="#about" onClick={handleClick}>Sobre mi</a>
+        </li>
+        <li>
+        <a href="#projects" onClick={handleClick}>Projects</a>
         </li>
         <li>
           <a href="#contact" onClick={handleClick}>Contact</a>
-        </li>
-        <li>
-          <a href="#standings" onClick={handleClick}>Standings</a>
-        </li>
-        <li>
-          <a href="#projects" onClick={handleClick}>Projects</a>
         </li>
       </ul>
 

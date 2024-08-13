@@ -33,3 +33,13 @@
     color: #555; /* Color del texto de la versión */
     margin: 0; /* Elimina márgenes predeterminados */
 }
+
+.highlight-text {
+    font-size: 1rem;
+    color: #007bff; /* Color del texto resaltado, similar al color de los enlaces */
+    font-weight: bold;
+    /* cursor: pointer; Muestra el cursor de enlace para indicar que es interactivo */
+    /* text-decoration: underline; Subraya el texto para asemejarse a un enlace */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
