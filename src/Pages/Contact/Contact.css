@@ -9,7 +9,7 @@
   min-height: 100vh; /* Ocupa al menos el tamaño completo de la ventana */
   padding: 20px; /* Espaciado alrededor del contenido */
   box-sizing: border-box;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 /* Estilo del contenedor de la sección de contacto */

@@ -12,7 +12,7 @@ export const ProjectsComponent = ({ title, imageUrl, alt, redirectUrl, className
             <h1>{title}</h1>
             <img src={imageUrl} alt={alt} className={className} />
             <p>{descripcion}</p>
-            {techIcons && <TechIconsComponent logos={techIcons} />}
+            {techIcons  && <TechIconsComponent logos={techIcons}  />}
         </div>
     );
 };

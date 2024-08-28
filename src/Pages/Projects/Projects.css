@@ -3,7 +3,8 @@
     min-height: 100vh; /* Altura mínima igual a la altura de la ventana de visualización */
     display: flex;
     flex-direction: column; /* Permite que los elementos se coloquen verticalmente */
-    background-color: black;
+    /* background-color: rgb(23, 23, 236); */
+    padding-top: 80px;
 }
 
 /* Contenedor de la lista de proyectos, ocupando el espacio restante */
@@ -19,4 +20,10 @@
 /* Ajusta el contenido adicional si es necesario */
 .projects-page > * {
     margin: 0; /* Elimina márgenes predeterminados */
+}
+
+h2{
+    margin-top: auto; 
+    text-align: center;
+    font-size: 2.5rem;
 }

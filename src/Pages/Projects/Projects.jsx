@@ -6,6 +6,7 @@ import './Projects.css';
 export const Projects = () => {
     return (
         <div id='projects' className="projects-page"> {/* Aplica la clase projects-page aquí */}
+        <h2>Proyectos</h2>
             <div className="projects-list">
                 {projects.map((project, index) => (
                     <ProjectsComponent

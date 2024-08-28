@@ -8,7 +8,7 @@
   padding: 20px; /* Espaciado alrededor del contenido */
   padding-top: 80px; /* Espacio superior para evitar superposición con la navbar */
   box-sizing: border-box;
-  background-color: brown;
+  /* background-color: brown; */
 }
 
 /* Estilo del contenedor de la sección About */

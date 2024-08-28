@@ -10,7 +10,7 @@ export const Contact = () => {
         <h1>Contactame</h1>
         <div className="home-list">
           {contactData.map((data, index) => (
-            <TechIconsComponent key={index} logos={data.techIcons} title="hola"/>
+            <TechIconsComponent key={index} logos={data.techIcons}/>
           ))}
         </div>
       </div>
